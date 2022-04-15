@@ -55,7 +55,8 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
+# Django stuff:  update 0416 migrations/ 추가
+migrations/
 *.log
 local_settings.py
 db.sqlite3
