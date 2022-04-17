@@ -1,5 +1,8 @@
 # ji custom
 99/
+migrations/
+_media/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
