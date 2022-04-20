@@ -26,3 +26,15 @@ class Post(models.Model):
 
     def get_file_ext(self):
         return self.get_file_name().split('.')[-1]
+
+## custom
+class Nutrition(models.Model):
+    one_serving_kcal    = models.DecimalField(max_digits=6, decimal_places=2)
+    sodium_mg           = models.DecimalField(max_digits=6, decimal_places=2)
+    fat_g               = models.DecimalField(max_digits=6, decimal_places=2)
+    sugars_g            = models.DecimalField(max_digits=6, decimal_places=2)
+    protein_g           = models.DecimalField(max_digits=6, decimal_places=2)
+    caffeine_mg         = models.DecimalField(max_digits=6, decimal_places=2)
+
+    class Meta:
+        db_table = 'nutritions'
