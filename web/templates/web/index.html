@@ -1,0 +1,10 @@
+<div class="'col-md-12">
+    <div class="container">
+        {% for list in disney %}
+          <h1>  {{ list.title }} </h1>
+          <p>{{list.synopsis}}</p>
+          <p>{{list.genre}}</p>
+          <p><img src="{{list.poster_link}}" alt="프리가이"></p>
+        {% endfor %}
+    </div>
+</div>
