@@ -18,9 +18,12 @@ class Netflix(models.Model):
     wavve = models.IntegerField(blank=True, null=True)
     watcha = models.IntegerField(blank=True, null=True)
 
+
+
     class Meta:
-        managed = False
-        db_table = 'netflix'
+        managed = True
+        db_table = 'NETFLIX'
+
 
 class Disney(models.Model):
     title = models.CharField(max_length=4000, blank=True, null=True)
@@ -39,8 +42,8 @@ class Disney(models.Model):
     watcha = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'disney'
+        managed = True
+        db_table = 'DISNEY'
 
 
 class Watcha(models.Model):
@@ -60,8 +63,8 @@ class Watcha(models.Model):
     watcha = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'watcha'
+        managed = True
+        db_table = 'WATCHA'
 
 
 class Wavve(models.Model):
@@ -81,5 +84,5 @@ class Wavve(models.Model):
     watcha = models.IntegerField(blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'wavve'
+        managed = True
+        db_table = 'WAVVE'
