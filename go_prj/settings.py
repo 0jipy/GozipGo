@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'single_pages',
+    'web',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +76,22 @@ WSGI_APPLICATION = 'go_prj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# mysql 연동을 위해 디폴트 주석처리
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FOR_YM',
+        'USER': 'carbon',
+        'PASSWORD' : '1111',
+        'HOST' : '3.35.111.73',
+        'PORT' : '3306',    
     }
 }
 
